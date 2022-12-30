@@ -1,0 +1,100 @@
+@import url(./reset.css);
+html,
+body {
+   height: 100%;
+}
+.wrapper {
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+}
+/* ---------------------------------------------------------- HEADER */
+.header {
+   width: 100%;
+   height: 80px;
+   display: flex;
+   align-items: flex-end;
+   justify-content: center;
+}
+.header__title {
+   font-size: 35px;
+}
+/* ---------------------------------------------------------- HEADER */
+/* ---------------------------------------------------------- MAIN */
+.main {
+   flex: 1 1 auto;
+}
+.main__container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   perspective: 800px;
+}
+/* ---------------------------------------------------------- SELECT LEVEL BLOCK */
+.select-level {
+   margin-top: 70px;
+   text-align: center;
+}
+.select-level__title {
+   font-size: 30px;
+}
+.select-level__btn-container {
+   margin-top: 45px;
+   display: flex;
+   gap: 15px;
+}
+.select-level__btn {
+   width: 150px;
+   height: 40px;
+   border: 1px solid black;
+   transition: 0.7s;
+}
+.select-level__btn:hover {
+   background: black;
+   color: #fff;
+}
+/* ---------------------------------------------------------- SELECT LEVEL BLOCK */
+/* ---------------------------------------------------------- CARD BLOCK */
+.card {
+   position: relative;
+   transform-style: preserve-3d;
+   width: 100%;
+   height: 100%;
+   transition: transform 1200ms;
+   cursor: pointer;
+}
+.cards-container {
+   width: 80%;
+   margin-top: 50px;
+   display: grid;
+   grid-template-columns: repeat(4 , 1fr);
+   grid-template-rows: repeat(3 , 200px);
+   grid-auto-rows: 200px;
+   gap: 20px;
+}
+.card__img,
+.card__back {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   backface-visibility: hidden;
+}
+.card__back {
+   font-size: 10rem;
+   text-align: center;
+   border: 1px solid black;
+}
+.card__img {
+   object-fit: cover;
+   transform: rotateY(180deg);
+   background-position: top left;
+   background-repeat: no-repeat;
+}
+.card--flip {
+   transform: rotateY(180deg);
+}
+.card--correct {
+    background: green;
+}
+/* ---------------------------------------------------------- CARD BLOCK */
