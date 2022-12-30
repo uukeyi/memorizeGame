@@ -1,3 +1,3 @@
 # memorizeGame
 Memorize Game
-USE LOCALHOST TO START
+USE LIVESERVER TO START
