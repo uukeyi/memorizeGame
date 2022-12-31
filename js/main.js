@@ -27,6 +27,7 @@ const createCard = (src, cardsContainer, config) => {
    card.className = config.card;
    cardImg.className = config.img;
    cardBack.className = config.back;
+   cardImg.alt  = config.id
    cardBack.textContent = '?'
    card.dataset.id = config.id;
    cardImg.src = src;
