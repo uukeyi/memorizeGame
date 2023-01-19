@@ -1,4 +1,4 @@
 # memorizeGame
-Memorize Game  
+Simple Memorize Game  
 USE LIVE SERVER TO START  
 THIS PROJECT IS NOT ADAPTIVE FOR PHONES , TABLETS
